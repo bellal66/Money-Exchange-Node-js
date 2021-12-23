@@ -1,0 +1,64 @@
+<aside class="dtretsidebar22 sidebar-dark-primary elevation-4">
+    <div class="sidebar">
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-newspaper"></i>
+              <p>
+                News
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-question-circle"></i>
+              <p>
+                Help
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-envelope"></i>
+              <p>
+                Contuct Us
+              </p>
+            </a>
+          </li>
+          <% if(typeof(loginmsg) != 'undefined'){%>
+            <li class="nav-item">
+              <a class="nav-link" href="/account">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Account
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">
+                <i class=" nav-icon fas fa-sign-in-alt"></i>
+                <p>
+                  Logout
+                </p>
+              </a>
+            </li>
+          <% }else{%>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">
+            <i class="nav-icon fas fa-sign-in-alt"></i>
+            LogIn
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contentregButtt" href="/register">
+            <i class="nav-icon fas fa-sign-out-alt"></i>
+            Registration
+            </a>
+          </li>
+          <% } %>
+        </ul>
+      </nav>
+    </div>
+  </aside>

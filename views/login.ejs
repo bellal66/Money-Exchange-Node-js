@@ -1,0 +1,47 @@
+<%- include('./header', {
+    title: 'login'
+}) %>
+<%- include('./side') %>
+  <div class="content-wrapper col-lg-9">
+    <!-- /.content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7 mt-5">
+            <div class="card float-right">
+              <div class="card-body">
+        <form action="/loginin" method="post">
+          <% if(typeof(message) !== 'undefined'){ %>
+        <div class="input-group mb-3"><%= message %></div>
+        <% } %>
+        <div class="input-group mb-3">
+          <input type="text" name="email" id="email" class="form-control" placeholder="Email/userId">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" name="password" class="form-control" placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-block">Log In</button>
+          </div>
+        </div>
+      </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.content-wrapper -->
+  <%- include('./footer') %>

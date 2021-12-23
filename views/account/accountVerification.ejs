@@ -1,0 +1,58 @@
+<%- include('../header.ejs') %>
+<%- include('../side.ejs') %>
+
+          <%
+          if(typeof(loginmsg) != 'undefined'){
+          %> 
+          <%- include('./side.ejs') %>
+          <div class="col-md-9">
+            <div class="row account-detail-1">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-address-card mr-1"></i> Account Verification
+                            <section class="content-header"></section>
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <span class="btn btn-circle btn-sm btn-success">1</span>
+                                            <span class=" text-bold">&nbsp;&nbsp; Overview </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <span class="btn btn-sm btn-default btn-circle">2</span>
+                                            <span>&nbsp;&nbsp; Phone Verification </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <span class="btn btn-sm btn-default btn-circle">3</span>
+                                            <span>&nbsp;&nbsp; Email Verification </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <span class="btn btn-sm btn-default btn-circle">4</span>
+                                            <span>&nbsp;&nbsp; Document Verification </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <% if(1 == 1){ %>
+                                             okk
+                                            <% }else{ %>
+                                             no
+                                            <% } %> 
+                                        </div>
+                                        <div class="card-footer">ert</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+  <% 
+  }else{
+    %>
+    <h1>Login please!</h1>
+    <%
+  }
+  %>
+</div>
+<%- include('../footer.ejs') %>
+<script src="js/profile.js"></script>

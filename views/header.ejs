@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= (typeof(title) !== 'undefined')? title: 'ME' %></title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" type="text/css"href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/adminlte.min.css">
+  <style>
+    .juyhbdfuyy2,.mininorbart{
+      display: none;
+    }
+    .dtretsidebar22{
+      display: none;
+    }
+    .contentreg{
+      display: none;
+    }
+    .carousel-item{
+      margin-left: 35%;
+    }
+    .header-short{
+      text-align: center;
+    }
+    .account-side{
+      cursor: pointer;
+    }
+    .account-side-1{
+      padding: 10px 10px;
+    }
+    @media only screen and (max-width: 768px) {
+      .juyhbdfuy{
+        display: none;
+      }
+      .juyhbdfuyy2{
+        display: block;
+      }
+      .fdghrthfdgh{
+        width: 50%;
+        text-align: center;
+      }
+      .carousel-item{
+        margin-left: 10%;
+      }
+    }
+    .card, .card-body{
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body class="hold-transition ">
+<div class="wrapper">
+<div class="row">
+<div class="col-1"></div>
+<div class="col-10">
+  
+
+  <ul class="navbar-nav header-short">
+    <div class="row">
+      <div class="col-lg-3 fdghrthfdgh">
+      <li class="nav-item">
+        <a class="nav-link text-dark"><i class="fas fa-phone"></i>  +880123456789</a>
+      </li>
+      </div>
+      <div class="col-3 juyhbdfuy">
+      <li class="nav-item ">
+        <a class="nav-link text-dark"><i class="fas fa-envelope"></i>  abcd@gmail.com</a>
+      </li>
+      </div>
+      <div class="col-3 juyhbdfuy">
+      <li class="nav-item ">
+        <a class="nav-link text-dark">
+        <i class="far fa-clock"></i> 10 AM - 10 PM, +06</a>
+      </li>
+      </div>
+      <% if(typeof(loginmsg) != 'undefined'){%>
+        <div class="col-3 fdghrthfdgh">
+        <li class="nav-item">
+          <a class="nav-link text-dark"><i class="fas fa-coins"></i> 145.87$</a>
+        </li>
+        </div>
+      <% }else{
+        %>
+        <div class="col-3 fdghrthfdgh">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/login"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </li>
+        </div>
+        <%
+      } %>
+    </div>
+  </ul>
+
+</div>
+<div class="col-1"></div>
+</div>
+
+  <nav class="navbar navbar-expand navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/" role="button"><span class="font-weight-bold h4">Brand Logo</span></a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto juyhbdfuy">
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+        <i class="far fa-newspaper"></i>
+          News
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+        <i class="far fa-question-circle"></i>
+          Help
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+        <i class="far fa-envelope"></i>
+          Contact Us
+        </a>
+      </li>
+      <% if(typeof(loginmsg) != 'undefined'){%>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="/account">
+          <i class="fas fa-user"></i>
+          Account
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="/logout">
+          <i class="fas fa-sign-in-alt"></i>
+          Logout
+          </a>
+        </li>
+      <% }else{%>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="/login">
+        <i class="fas fa-sign-in-alt"></i>
+        LogIn
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link contentregButtt" href="/register">
+        <i class="fas fa-sign-out-alt"></i>
+        Registration
+        </a>
+      </li>
+      <% } %>
+    </ul>
+    <ul class="navbar-nav ml-auto juyhbdfuyy2">
+      <li class="nav-item">
+        <a class="nav-link mininorbartbtn" data-widget="" data-slide="true" href="#" role="button">
+          <i class="fas fa-bars"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
